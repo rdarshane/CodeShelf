@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace CodeShelf
 {
-    class Animal
+    class Book
     {
-        public Animal()
+        public Book()
         {
             ISBN = 134;
         }
 
-        public string Speak()
+        public string GetTypeString()
         {
-            return "Animal speaking";
+            return "Book";
         }
 
         public int ISBN { get; set; }
     }
 
-    class Cat : Animal
+    class Magazine : Book
     {
         private string _isbn;
 
-        public new string Speak()
+        public new string GetTypeString()
         {
-            return $"{base.Speak()} Meow";
+            return $"{base.GetTypeString()} : Magazine";
         }
 
         public new string ISBN

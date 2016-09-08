@@ -10,9 +10,9 @@ namespace CodeShelf
     {
         static void Main(string[] args)
         {
-            Cat a = new Cat();
+            Magazine a = new Magazine();
             a.ISBN = "New##-456-";
-            Console.WriteLine(a.Speak());
+            Console.WriteLine(a.GetTypeString());
             Console.WriteLine(a.ISBN);
             Console.ReadLine();
         }
